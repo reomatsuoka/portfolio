@@ -1,292 +1,116 @@
-/* body{ 
-  color:#333;
-  font-family:"Arial Black",sans-serif;
-  margin: 0;
-}
 
-header{
-  width:100%;
-  height:250px;
-  position: relative;
-} */
-
-.style{
-  /* 背景を暗くしたい */
-  background: rgba(0,0,0, 0.4);
-}
-.container{
-  margin-left:350px;
-  margin-right: 90px;
-  display:flex;
-}
-
-.info{
-  display:flex;
-  width:100%;
+html,body{
   height: 100%;
-  margin-top: 32px;
-  color:white;
+  width: 100%;
+  font-family: "poppins",sans-serif;
+  color: #222;
 }
-.info h1{
-  font-size: 50px;
+.navber{
+padding: .8rem;
 }
-ul link{
-  text-align: center;
+.nav-item{
+  padding-right: 20px;
 }
-
-.link img{
-  margin-left: 30px;
+.nav-link{
+  font-size: 1.1em !important;
 }
-
-
-/* figure{
- position: absolute;
-  top:0;
-  left:0;
-  width:100%;
- height:100%;
- margin:0;
- opacity:0.4;
-} */
-
-.icon img{
-  border-radius: 50%;
-  border-width:4px;
-  border-style:solid;
-  border-color:white;
-  margin-top: 50px;
+.carousel-inner img{
+  max-height: 740px;
+  width: 100%;
+  height: 100%;
 }
-
-.example{
-  position: relative;
-  margin-left:150px;
-}
-
-.example h2{
-  font-size: 50px;
-}
-
-.example h3{
+.carousel-caption{
   position: absolute;
-  top: 160px;
-  left:45px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-caption h1{
+  font-size: 600%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 10px black;
+}
+.carousel-caption h3{
+  font-size: 200%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px black;
+  padding-bottom: 1rem;
+}
+.btn-primary{
+  background-color: #6648b1;
+  border: 1px solid #6648b1;
+}
+.btn-primary:hover{
+  background-color: #563d7c;
+  border: 1px solid #563d7c;
+}
+.padding{
+  padding-bottom: 2rem;
+}
+.welcome{
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.welcome hr{
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: .5rem;
+  margin-bottom: 2rem;
+}
+.social a{
+  font-size: 4.5rem;
+  padding:3rem;
+}
+.fa-facebook{
+  color: #3b5998;
+}
+.fa-twitter{
+  color: #00aced;
+}
+.insta_btn .insta{/*アイコンの背景*/
+  position: relative;/*相対配置*/
+  display: inline-block;
+  width: 50px;/*幅*/
+  height: 50px;/*高さ*/
+  background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
+  overflow: hidden;/*はみ出た部分を隠す*/
+  border-radius: 13px;/*角丸に*/
+
+}
+.insta_btn .insta:before{/*グラデーションを重ねるため*/
+  content: '';
+  position: absolute;/*絶対配置*/
+  top: 23px;/*ずらす*/
+  left: -18px;/*ずらす*/
+  width: 60px;/*グラデーションカバーの幅*/
+  height: 60px;/*グラデーションカバーの高さ*/
+  background: -webkit-radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+  background: radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);/*グラデーション②*/
+}
+.insta_btn .fa-instagram {/*アイコン*/
+  color: #FFF;/*白に*/
+  position: relative;/*z-indexを使うため*/
+  z-index: 2;/*グラデーションより前に*/
+  font-size: 35px;/*アイコンサイズ*/
+  line-height: 50px;/*高さと合わせる*/
+  top: -42.5px;
 }
 
-.example p{
-  position: absolute;
-  width:100%;
-  top:210px;
-  left:50px;
-  padding:0 20px 0 20px;
+/* .card-img{
+  height: 300px;
+  width: 400px;
 }
 
-.example img{
-  width:600px;
-  padding-left:0;
-}
-.example2{
-  position: relative;
-  float:right;
-  margin-right:150px;
-}
-.example2 h3{
-  position: absolute;
-  top: 45px;
-  left:45px;
-}
-
-.example2 p{
-  position: absolute;
-  top:90px;
-  left:50px;
-  padding:0 20px 0 20px;
-}
-
-.example2 img{
+.card-img-overlay{
   padding:0;
-}
-
-.example2 p img{
-  width:100px;
-  height:80px;
-  margin-top: -20px;
-  margin-left: -5px;
-  float:right;
-}
-
-.example3{
-  position: relative;
-  margin-left:150px;
-}
-
-.example3 h3{
-  position: absolute;
-  top: 310px;
-  left:45px;
-}
-
-.example3 p{
-  position: absolute;
-  width:100%;
-  top:360px;
-  left:50px;
-  padding:0 20px 0 20px;
-}
-
-.example3 img{
-  width:600px;
-  padding-left:0;
-}
-
-.info{
-  margin-left:50px;
-}
-
-.info h1{
-  font-weight:normal;
-  font-size:24px;
-  margin:0;
-}
-
-.info li{
-  list-style-type: none;
-}
-
-.works{
-  width:600px;
-  height:1000px;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-.works li{
-  list-style-type:none;
-}
-
-.works a{
-  float:left;
-}
-
-.works > h1{
-  font-weight:normal;
-  font-size:30px;
-  text-align:center;
-}
-
-.works ul > h2{
-  font-size: 50px;
+  top:calc(50% - 0.5rem);
   text-align: center;
+  font-weight:bold;
 }
-
-.flex{
-  padding:10% 0;
-  display: flex;
-  /* flex-direction:row; */
-  justify-content: space-evenly;
-}
-
-.skill{
-  position: relative;
-  width:100%;
-  height:auto;
-}
-
-.skill h2{
-  font-size:50px;
-}
-
-.skill h3{
-  position: absolute;
-  top: 50px;
-  text-align: center;
-  width:300px;
-  height:200px;
-  margin:0;
-}
-
-.skill p{
-  position: absolute;
-  top: 100px;
-  text-align: center;
-  width:300px;
-  height:200px;
-  margin:0;
-}
-
-.skill img{
-  width: 300px;
-  height:200px;
-}
-
-.skill2{
-  position: relative;
-  width:100%;
-  height:auto;
-}
-
-.skill2 h2{
-  font-size:50px;
-}
-
-.skill2 h3{
-  position: absolute;
-  top: 50px;
-  text-align: center;
-  width:300px;
-  height:200px;
-  margin:0;
-}
-
-.skill2 p{
-  position: absolute;
-  top: 100px;
-  text-align: center;
-  width:300px;
-  height:200px;
-  margin:0;
-}
-
-.skill2 img{
-  width: 300px;
-  height:200px;
-}
-
-.skill3{
-  position: relative;
-  width:100%;
-  height:auto;
-}
-
-.skill3 h2{
-  font-size:50px;
-}
-
-.skill3 h3{
-  position: absolute;
-  top: 50px;
-  text-align: center;
-  width:300px;
-  height:200px;
-  margin:0;
-}
-
-.skill3 p{
-  position: absolute;
-  top: 100px;
-  text-align: center;
-  width:300px;
-  height:200px;
-  margin:0;
-}
-
-.skill3 img{
-  width: 300px;
-  height:200px;
-}
-
 footer{
   height:50px;
   margin-bottom: 30px;
   color:gray;
   text-align:center;
-}
+} */
