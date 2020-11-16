@@ -23,238 +23,216 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#"></a>
-			<!-- <img src="img/my photo1.JPG"> -->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#"></a>
+		<!-- <img src="img/my photo1.JPG"> -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	</div>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="#">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Service</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Team</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Connect</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+<div id="slides" class="carousel slide" data-ride="carousel">
+	<ul class="carousel-indicators">
+		<li data-target="#slides" data-slide-to="0" class="active"></li>
+		<li data-target="#slides" data-slide-to="1"></li>
+		<li data-target="#slides" data-slide-to="2"></li>
+	</ul>
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img src="img/header1.jpeg">
+			<div class="carousel-caption">
+				<h1 class="display-2">自己紹介</h1>
+				<h3>【経歴】</h3>
+				<p>2019年3月　甲南大学経営学部経営学科を卒業 </p>
+				<p>2019年4月　株式会社レオパレス21に就職</p>
+				<p>現在に至る。</p>
+				<button type="button" class="btn btn-outline-light btn-lg">View Demo</button>
+				<button type="button" class="btn btn-primary btn-lg">Get Started</button>
+			</div>
 		</div>
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Home</a>
+		<div class="carousel-item">
+			<img src="img/header2.jpeg">
+		</div>
+		<div class="carousel-item">
+			<img src="img/ramen1.JPG">
+		</div>
+	</div>
+</div>
+<!-- <header style="background:url(img/header用2.jpeg)" ;>
+	<div class="container">
+
+		<div class="icon">
+			<img src="img/my photo1.JPG" width="120" height="120" alt="玲央のアイコンです">
+		</div>
+		<div class="info">
+			<h1 class="text-danger">松岡玲央</h1>
+			<ul class="link">
+				<li>
+					<a href="https://www.instagram.com/reo37458/" target="_blank">
+						<img src="img/photos.png" width="20" height="20" alt="instagramへのリンク画像です">
+					</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">About</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Service</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Team</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Connect</a>
-				</li>
+				<li>【経歴】</li>
+				<p>2019年3月　甲南大学経営学部経営学科を卒業 </p>
+				<p>2019年4月　株式会社レオパレス21に就職</p>
+				<p>現在に至る。</p>
 			</ul>
 		</div>
-	</nav>
-	<div id="slides" class="carousel slide" data-ride="carousel">
-		<ul class="carousel-indicators">
-			<li data-target="#slides" data-slide-to="0" class="active"></li>
-			<li data-target="#slides" data-slide-to="1"></li>
-			<li data-target="#slides" data-slide-to="2"></li>
-		</ul>
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src="img/header1.jpeg">
-				<div class="carousel-caption">
-					<h1 class="display-2">自己紹介</h1>
-					<h3>【経歴】</h3>
-					<p>2019年3月　甲南大学経営学部経営学科を卒業 </p>
-					<p>2019年4月　株式会社レオパレス21に就職</p>
-					<p>現在に至る。</p>
-					<button type="button" class="btn btn-outline-light btn-lg">View Demo</button>
-					<button type="button" class="btn btn-primary btn-lg">Get Started</button>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<img src="img/header2.jpeg">
-			</div>
-			<div class="carousel-item">
-				<img src="img/ramen1.JPG">
-			</div>
-		</div>
-	</div>
-	<!-- <header style="background:url(img/header用2.jpeg)" ;>
-		<div class="container">
-
-			<div class="icon">
-				<img src="img/my photo1.JPG" width="120" height="120" alt="玲央のアイコンです">
-			</div>
-			<div class="info">
-				<h1 class="text-danger">松岡玲央</h1>
-				<ul class="link">
-					<li>
-						<a href="https://www.instagram.com/reo37458/" target="_blank">
-							<img src="img/photos.png" width="20" height="20" alt="instagramへのリンク画像です">
-						</a>
-					</li>
-					<li>【経歴】</li>
-					<p>2019年3月　甲南大学経営学部経営学科を卒業 </p>
-					<p>2019年4月　株式会社レオパレス21に就職</p>
-					<p>現在に至る。</p>
-				</ul>
-			</div>
-		</div> -->
-	<!-- </header> -->
-	<div class="container-fluid padding">
-		<div class="row welcome text-center">
-			<div class="col-12">
-				<h1 class="display-4">松岡玲央 取扱説明書</h1>
-			</div>
-			<hr>
-
-			<div class="col-12">
-				<p class="lead">（ここに説明文を書く）</p>
-			</div>
-		</div>
-	</div>
-	<!-- <div class="card">
-		<img class="card-img" src="img/flame.jpg" alt="枠組み">
-		<div class="card-img-overlay">
-			<p class="text-write">取り扱いに要注意。。。</p>
-		</div>
 	</div> -->
-	<div class="container-fluid padding">
-		<div class="row text-center padding">
-			<div class="row justify-content-center justfy-content-sm-start">
-				<div class="col-xs-12 col-sm-8 col-md-8">
-					<i class="fas fa-expranation1"></i>
-					<h3>取り扱いに要注意。。。</h3>
-					<p>※きつい言葉を掛けられると傷つきます。そんな時はチョコレートをあげてみましょう。少し喜びます。<br>
-						※わからない事があると理解するまで考え込んでしまうところがありますが根気強くお付き合い下さい。</p>
-				</div>
-				<div class="col-xs-12 col-sm-8 col-md-8">
-					<i class="fas fa-explation2"></i>
-					<h3>ラーメンが大好き</h3>
-					<p>お勧めのところがあれば教えましょう。多分喜びます。<br>魚介系が好みである傾向にあります。<br>気が合えば一緒に行ってやって下さい。喜びます。</p>
-				</div>
-				<div class="col-xs-12 col-sm-8 col-md-8">
-					<i class="fas fa-expranation3"></i>
-					<h3>カフェインの与えすぎに注意して下さい。</h3>
-					<p>とにかくカフェオレが大好き。放っておくとずっと飲んでいる為、カフェインの過剰摂取となりますのでご注意ください。<br>※目安としては１日３杯当たり</p>
-				</div>
-			</div>
-			<hr class="my-4">
+<!-- </header> -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">松岡玲央 取扱説明書</h1>
 		</div>
-		<!-- 自己紹介 -->
-		<!-- <section class="works">
-			<h1>－－－－－ 松岡玲央 取扱説明書 －－－－－</h1>
-			<ul>
-				<li>
-					<div class="example">
-						<h2>【特徴】</h2>
-						<img src="img/flame.jpg" width="600" height="260" alt="説明文の枠組み">
-						<h3>取り扱いに要注意。。。</h3>
-						<p>※きつい言葉を掛けられると傷つきます。そんな時はチョコレートをあげてみましょう。少し喜びます。<br>
-							※わからない事があると理解するまで考え込んでしまうところがありますが根気強くお付き合い下さい。</p>
-					</div>
-					<div class="example2">
-						<img src="img/flame.jpg" width="600" height="260" alt="説明文の枠組み">
-						<h3>ラーメンが大好き</h3>
-						<p>お勧めのところがあれば教えましょう。多分喜びます。<br>魚介系が好みである傾向にあります。<br>気が合えば一緒に行ってやって下さい。喜びます。
-							<img src="img/ramen1.JPG" width="100" height="80" alt="ラーメンの写真">
-						</p>
-					</div>
-					<div class="example3">
-						<img src="img/flame.jpg" width="600" height="260" alt="説明文の枠組み">
-						<h3>カフェインの与えすぎに注意して下さい。</h3>
-						<p>とにかくカフェオレが大好き。放っておくとずっと飲んでいる為、カフェインの過剰摂取となりますのでご注意ください。<br>※目安としては１日３杯当たり
-						</p>
-					</div> -->
-		<!-- </li> -->
-		<div class="container-fluid padding">
-			<div class="row welcome text-center">
-				<div class="col-12">
-					<h1 class="display-4">性能</h1>
-				</div>
-				<hr>
-			</div>
-		</div>
+		<hr>
 
-		<div class="container-fluid padding">
-			<div class="row padding">
-				<div class="col-md-4">
-					<div class="card">
-						<img class="card-img-top" src="img/flame２.jpg" alt="Card image">
-						<div class="card-body">
-							<h4 class="card-title">Ruby</h4>
-							<p class="card-text">Progateにてメニュー表作成</p>
-							<a href="#" class="btn btn-outline-secondary">See portfolio</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="card">
-						<img class="card-img-top" src="img/flame２.jpg">
-						<div class="card-body">
-							<h4 class="card-title">Python</h4>
-							<p class="card-text">Progateにて条件分岐まで学習済み</p>
-							<a href="#" class="btn btn-outline-secondary">See portfolio</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="card">
-						<img class="card-img-top" src="img/flame２.jpg">
-						<div class="card-body">
-							<h4 class="card-title">HTML&CSS</h4>
-							<p class="card-text">ポートフォリオ作成</p>
-							<a href="#" class="btn btn-outline-secondary">See portfolio</a>
-						</div>
-					</div>
+		<div class="col-12">
+			<p class="lead">（ここに説明文を書く）</p>
+		</div>
+	</div>
+</div>
+<div class="card float-right">
+	<div class="col-12 clearfix">
+		<img class="img-fluid" src="img/flame.jpg" alt="枠組み">
+			<div class="card-img-overlay">
+				<h4 class="text-title">取り扱いに要注意。。。</h4>
+				<p class="text-write">※きつい言葉を掛けられると傷つきます。そんな時はチョコレートをあげてみましょう。少し喜びます。<br>
+					※わからない事があると理解するまで考え込んでしまうところがありますが根気強くお付き合い下さい。</p>
+			</div>
+	</div>
+</div>
+<div class="card float-left">
+	<div class="col-12 clearfix">
+		<img class="img-fluid" src="img/flame.jpg" alt="枠組み">
+			<div class="card-img-overlay">
+				<h4 class="text-title">ラーメンが大好き</h4>
+				<p class="text-write">お勧めのところがあれば教えましょう。多分喜びます。<br>魚介系が好みである傾向にあります。<br>気が合えば一緒に行ってやって下さい。喜びます。</p>
+			</div>
+	</div>
+</div>
+<div class="card float-right">
+	<div class="col-12 clearfix">
+		<img class="img-fluid" src="img/flame.jpg" alt="枠組み">
+			<div class="card-img-overlay">
+				<h4 class="text-title">カフェインの与えすぎに注意して下さい。</h4>
+				<p class="text-write">とにかくカフェオレが大好き。放っておくとずっと飲んでいる為、カフェインの過剰摂取となりますのでご注意ください。<br>※目安としては１日３杯当たり</p>
+			</div>
+	</div>
+</div>
+
+
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">性能</h1>
+		</div>
+		<hr>
+	</div>
+</div>
+
+<div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="img/flame２.jpg" alt="Card image">
+				<div class="card-body">
+					<h5 class="card-title">Ruby</h5>
+					<h6 class="card-text">Progateにてメニュー表作成</h6>
+					<a href="#" class="btn btn-outline-secondary">See portfolio</a>
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid padding">
-			<div class="row text-center padding">
-				<div class="col-12">
-					<h2>Connect</h2>
-				</div>
-				<div class="col-12 social padding">
-					<a href="#"><i class="fab fa-facebook"></i></a>
-					<a href="#"><i class="fab fa-twitter"></i></a>
-					<a href="#" class="insta_btn">
-						<span class="insta">
-							<i class="fab fa-instagram"></i>
-						</span></a>
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="img/flame２.jpg">
+				<div class="card-body">
+					<h5 class="card-title">Python</h5>
+					<h6 class="card-text">Progateにて条件分岐まで学習済み</h6>
+					<a href="#" class="btn btn-outline-secondary">See portfolio</a>
 				</div>
 			</div>
 		</div>
-		<footer>
-			<div class="container-fluid padding">
-				<div class="row text-center">
-					<div class="col-md-4">
-						<p>　　　　　</p>
-						<p>000-000-0000</p>
-						<p>reo199637458@gmail.com</p>
-						<p>住所</p>
-					</div>
-					<div class="col-md-4">
-						<hr class="light">
-						<h5>Our Hours</h5>
-						<hr class="light">
-						<p>月〜金：9pm〜1am</p>
-						<p>土・祝：9am〜0am</p>
-						<p>日：closed</p>
-					</div>
-					<div class="col-md-4">
-						<hr class="light">
-						<h5>Service area</h5>
-						<hr class="light">
-						<p>全国</p>
-					</div>
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="img/flame２.jpg">
+				<div class="card-body">
+					<h5 class="card-title">HTML&CSS</h5>
+					<h6 class="card-text">ポートフォリオ作成</h6>
+					<a href="#" class="btn btn-outline-secondary">See portfolio</a>
 				</div>
 			</div>
-			<div class="col-12">
+		</div>
+	</div>
+</div>
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-12">
+			<h2>Connect</h2>
+		</div>
+		<div class="col-12 social padding">
+			<a href="#"><i class="fab fa-facebook"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#" class="insta_btn">
+				<span class="insta">
+					<i class="fab fa-instagram"></i>
+				</span></a>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-md-4">
+				<p>　　　　　</p>
+				<p>000-000-0000</p>
+				<p>reo199637458@gmail.com</p>
+				<p>住所</p>
+			</div>
+			<div class="col-md-4">
 				<hr class="light">
-				<p>(c) reo_matsuoka.com</p>
+				<h5>Our Hours</h5>
+				<hr class="light">
+				<p>月〜金：9pm〜1am</p>
+				<p>土・祝：9am〜0am</p>
+				<p>日：closed</p>
 			</div>
-		</footer>
-		</section>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Service area</h5>
+				<hr class="light">
+				<p>全国</p>
+			</div>
+		</div>
+	</div>
+	<div class="row text-center">
+		<div class="col-12">
+			<hr class="light">
+			<p>(c) reo_matsuoka.com</p>
+		</div>
+	</div>
+</footer>
+</section>
 
 </body>
 
