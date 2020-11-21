@@ -4,12 +4,20 @@ html,body{
   width: 100%;
   font-family: "poppins",sans-serif;
   color: #222;
-  /* background-image:url("bg.jpg");
-  background-repeat: repeat;
-  background-attachment: fixed; */
 }
+.jumbotron {
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-position: center 60%;
+}
+
 .navbar{
 padding: .8rem;
+}
+.navbar-brand img{
+  padding-left: .7rem;
+  height: 2.5rem;
+  margin: -3px;
 }
 .nav-item{
   padding-right: 20px;
@@ -26,11 +34,11 @@ padding: .8rem;
 .carousel-caption{
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-30%);
+  font-family: 'HanziPen TC',sans-serif;
 }
 .carousel-caption h1{
   font-size: 600%;
-  text-transform: capitalize;
   text-shadow: 1px 1px 10px black;
   padding-bottom: 2rem;
 }
@@ -72,6 +80,7 @@ padding: .8rem;
   font-size: 7rem ;
   letter-spacing: 1.5rem;
   opacity: 0.3;
+  padding-bottom: 1rem;
 }
 .concept-subheading{
   margin-bottom: 2rem;
@@ -97,14 +106,24 @@ padding: .8rem;
   margin-bottom: 5rem;
 }
 
-.lead{
+.lead,.me{
   font-size: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 .list-group-item{
   font-size: 1.7rem;
 }
+.skill-photo{
+  width: 200px;
+  height: 200px;
+}
 
 /* 自己紹介 */
+.intro-sub{
+  padding-bottom: 2rem;
+  margin-top: -40px;
+}
 .introduction{
   border: unset;
   padding-bottom: 2rem;
@@ -115,6 +134,13 @@ padding: .8rem;
 .img-fluid{
   width: 600px;
   padding:0;
+}
+.works-photo{
+  width: 500px;
+  height: 250px;
+}
+.me{
+  padding-left: 9.3rem;
 }
 
 /* SNSアイコン */

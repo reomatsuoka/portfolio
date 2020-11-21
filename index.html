@@ -24,9 +24,9 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#">portfolio</a>
+			<a class="navbar-brand" href="#"><img src="img/logo.png"><img src="img/icon.PNG"></a>
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 				<span class="navbar-toggler-icon"></span>
@@ -60,9 +60,9 @@
 		</ul>
 		<div class="carousel-inner">
 			<div class="carousel-caption">
-				<h1 class="display-2 font-italic">my portfolio</h1>
-				<a href="#" class="btn-sticky">BUTTON</a>
-				<button type="button" class="btn btn-primary btn-lg">Get Started</button>
+				<h1 class="display-2 font-italic">About to Reo</h1>
+				<!-- <a href="#" class="btn-sticky">BUTTON</a>
+				<button type="button" class="btn btn-primary btn-lg">Get Started</button> -->
 			</div>
 			<div class="carousel-item active">
 				<img src="img/header1.jpeg">
@@ -76,147 +76,155 @@
 		</div>
 	</div>
 	<div class="container">
+		<div class="jumbotron jumbotron-fluid text-center">
 
-		<div class="concept padding text-monospace"id="concept">
-			<div class="row welcome">
-			<div class="col-12">
-				<h1 class="concept-title text-secondary text-right">CONCEPT</h1>
-				<h3 class="concept-subheading text-center">何気ない日常に”より便利”を</h3>
-				<p class="concept-text text-center">何気なく過ごしている日常の中で”こんなサービスがあったらな”<br>という皆様の思いを形にして世の中のサービスを誰でも使いやすく<br>よりストレスフリーな世の中にしていくこと。<br>また、サービスを使う事で多くの人が笑顔になれる様にと想いを込めて<br>より良いものを作ることを心掛けております。</p>
-			</div>
-			</div>
-		</div>
-		
-		<div class="container-fluid padding text-monospace">
-			<div class="row welcome text-center">
-				<div class="col-12">
-					<h1 class="display-4">Skill</h1>
+			<div class="concept padding text-monospace" id="concept">
+				<div class="row welcome">
+					<div class="col-12">
+						<h1 class="concept-title text-secondary text-center">CONCEPT</h1>
+						<h3 class="concept-subheading text-center">何気ない日常に”より便利”を</h3>
+						<p class="concept-text text-center">
+							何気なく過ごしている日常の中で”こんなサービスがあったらな”<br>という皆様の思いを形にして世の中のサービスを誰でも使いやすく<br>よりストレスフリーな世の中にしていくこと。<br>また、サービスを使う事で多くの人が笑顔になれる様にと想いを込めて<br>より良いものを作ることを心掛けております。
+						</p>
+					</div>
 				</div>
-				<hr>
-				
-				<!-- skillパラメーター -->
-				<canvas class="skill-level" id="myRaderChart"></canvas>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
-				
-				<script>
-					var ctx = document.getElementById("myRaderChart");
-					var myRadarChart = new Chart(ctx, {
-						type: 'radar',
-						data: {
-							labels: ["Python", "HTML & CSS", "Ruby"],
-							datasets: [{
-								label: '比重',
-								data: [3, 3, 2,],
-								backgroundColor: "rgba(255,100,0,0.6)",
-								borderColor: "rgb(255,100,0)",
-								borderWidth: 1,
-								pointBackgroundColor: 'RGB(255,50,0)'
-							}]
-						},
-						options: {
-							scale: {
-								ticks: {
-									suggestedMin: 0,
-									suggestedMax: 5,
-									stepSize: 1,
-									callback: function (value, index, values) {
-										return ""
+			</div>
+
+			<div class="container-fluid padding text-monospace">
+				<div class="row welcome text-center">
+					<div class="col-12">
+						<h1 class="display-4">Skill</h1>
+					</div>
+					<hr>
+
+					<!-- skillパラメーター -->
+					<canvas class="col-md-6 skill-level" id="myRaderChart"></canvas>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+
+					<script>
+						var ctx = document.getElementById("myRaderChart");
+						var myRadarChart = new Chart(ctx, {
+							type: 'radar',
+							data: {
+								labels: ["Python", "HTML & CSS", "Ruby"],
+								datasets: [{
+									label: '比重',
+									data: [3, 3, 2,],
+									backgroundColor: "rgba(255,100,0,0.6)",
+									borderColor: "rgb(255,100,0)",
+									borderWidth: 1,
+									pointBackgroundColor: 'RGB(255,50,0)'
+								}]
+							},
+							options: {
+								scale: {
+									ticks: {
+										suggestedMin: 0,
+										suggestedMax: 5,
+										stepSize: 1,
+										callback: function (value, index, values) {
+											return ""
+										}
 									}
 								}
 							}
-						}
-					});
+						});
 					</script>
-			</div>
-		</div>
-		
-		<div class="container-fluid padding text-monospace">
-			<div class="row welcome text-center">
-				<div class="col-12">
-					<h1 class="display-4">Works</h1>
-				</div>
-				<hr>
-			</div>
-		</div>
-		
-		<div class="container-fluid padding text-monospace">
-			<div class="row padding">
-				<div class="col-md-4">
-					<div class="card">
-						<img class="card-img-top" src="img/flame２.jpg" alt="Card image">
-						<div class="card-body">
-							<h2 class="card-title">Ruby</h2>
-							<h6 class="card-text">Progateにてメニュー表作成</h6>
-							<a href="#" class="btn btn-outline-secondary">See portfolio</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="card">
-						<img class="card-img-top" src="img/flame２.jpg">
-						<div class="card-body">
-							<h2 class="card-title">Python</h2>
-							<h6 class="card-text">Progateにて条件分岐まで学習済み</h6>
-							<a href="#" class="btn btn-outline-secondary">See portfolio</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="card">
-						<img class="card-img-top" src="img/flame２.jpg">
-						<div class="card-body">
-							<h2 class="card-title">HTML&CSS</h2>
-							<h6 class="card-text">ポートフォリオ作成</h6>
-							<a href="#" class="btn btn-outline-secondary">See portfolio</a>
-						</div>
-					</div>
+					<img class="col-md-6 skill-photo" src="img/paiza.png">
+					<a href="https://github.com/reomatsuoka/study-python/blob/main/basic/practice2.py"></a>
 				</div>
 			</div>
-	<div class="padding text-monospace" id="about">
-		<div class="row welcome text-center">
-			<div class="col-12">
-				<h1 class="display-4">松岡玲央 取扱説明書</h1>
-			</div>
-			<hr>
 
-			<div class="col-12 text-secondary">
-				<h3 class="lead text-left">経歴</h3>
-				<ul class="list-group list-group-flush text-left">
-					<li class="list-group-item">2019年3月　甲南大学経営学部経営学科を卒業</li>
-					<li class="list-group-item">2019年4月　株式会社レオパレス21に就職</li>
-					<li class="list-group-item">現在に至る。</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="card flex-row-reverse text-monospace introduction">
-		<div class="card bg-dark text-dark in-list">
-			<img src="img/flame.important.jpg" class="img-fluid" alt="...">
-		</div>
-	</div>
-	<div class="card flex-row text-monospace introduction">
-		<div class="card bg-dark text-dark in-list">
-			<img src="img/flame.ramen.jpg" class="img-fluid" alt="...">
-		</div>
-	</div>
-	<div class="card flex-row-reverse text-monospace introduction">
-		<div class="card bg-dark text-dark in-list">
-			<img src="img/flame.cafe.jpg" class="img-fluid" alt="...">
-		</div>
-	</div>
-		</div>
-		<div class="container-fluid padding text-monospace">
-			<div class="row text-center padding">
-				<div class="col-12">
-					<h2>Connect</h2>
+			<div class="container-fluid padding text-monospace">
+				<div class="row welcome text-center">
+					<div class="col-12">
+						<h1 class="display-4">Works</h1>
+					</div>
+					<hr>
 				</div>
-				<div class="col-12 social padding">
-					<a href="#"><i class="fab fa-facebook"></i></a>
-					<a href="#"><i class="fab fa-twitter"></i></a>
-					<a href="#" class="insta_btn">
-						<span class="insta">
-							<i class="fab fa-instagram"></i>
-						</span></a>
+			</div>
+
+			<div class="container-fluid padding text-monospace">
+				<div class="works">
+					<img class="col-md-4 works-photo" src="img/portfolio.png">
+					<a href="https://github.com/reomatsuoka/study-python/blob/main/basic/practice2.py"
+						class="btn btn-outline-secondary"></a>
+					<img class="col-md-4 works-photo" src="img/hit&blow.png">
+					<a href="https://github.com/reomatsuoka/study-python/blob/main/basic/practice2.py"
+						class="btn btn-outline-secondary"></a>
+				</div>
+				<!-- <div class="row padding">
+						<div class="col-md-4">
+							<div class="card">
+								<img class="card-img-top" src="img/flame２.jpg" alt="Card image">
+								<div class="card-body">
+									<h2 class="card-title">Ruby</h2>
+									<h6 class="card-text">Progateにてメニュー表作成</h6>
+									<a href="#" class="btn btn-outline-secondary">See portfolio</a>
+								</div>
+							</div>
+						</div> -->
+				<!-- <div class="col-md-4">
+						<div class="card">
+							<img class="card-img-top" src="img/flame２.jpg">
+							<div class="card-body">
+								<h2 class="card-title">HTML&CSS</h2>
+								<h6 class="card-text">ポートフォリオ作成</h6>
+								<a href="#" class="btn btn-outline-secondary">See portfolio</a>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				<div class="padding text-monospace" id="about">
+					<div class="row welcome text-center">
+						<div class="col-12">
+							<h1 class="display-4">About</h1>
+						</div>
+						<hr>
+						<h5 class="col-12 intro-sub text-center">ここでは少しreoってどんな人なのかを書いていこうかと思いますので<br>是非見て頂ければ幸いです。。。
+						</h5>
+
+						<div class="col-12 text-secondary">
+							<h3 class="lead text-left">Career</h3>
+							<ul class="list-group list-group-flush text-left">
+								<li class="list-group-item">2015年4月　甲南大学経営学部経営学科を卒業</li>
+								<li class="list-group-item">2019年3月　甲南大学経営学部経営学科を卒業</li>
+								<li class="list-group-item">2019年4月　株式会社レオパレス21に就職</li>
+								<li class="list-group-item">現在に至る。</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<h3 class="me text-left text-secondary">Caracter</h3>
+				<div class="card flex-row-reverse text-monospace introduction">
+					<div class="card bg-dark text-dark in-list">
+						<img src="img/flame.important.jpg" class="img-fluid" alt="...">
+					</div>
+				</div>
+				<div class="card flex-row text-monospace introduction">
+					<div class="card bg-dark text-dark in-list">
+						<img src="img/flame.ramen.jpg" class="img-fluid" alt="...">
+					</div>
+				</div>
+				<div class="card flex-row-reverse text-monospace introduction">
+					<div class="card bg-dark text-dark in-list">
+						<img src="img/flame.cafe.jpg" class="img-fluid" alt="...">
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid padding text-monospace">
+				<div class="row text-center padding">
+					<div class="col-12">
+						<h1 class="display-4">Connect</h1>
+					</div>
+					<div class="col-12 social padding">
+						<a href="#"><i class="fab fa-facebook"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#" class="insta_btn">
+							<span class="insta">
+								<i class="fab fa-instagram"></i>
+							</span></a>
+					</div>
 				</div>
 			</div>
 		</div>

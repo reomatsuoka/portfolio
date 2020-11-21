@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,inital-scale=1">
+	<title>松岡玲央のポートフォリオ</title>
+	<link rel="icon" href="favicon.ico">
+	<meta name="description" content="松岡玲央のポートフォリオです。">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+		crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/f2e1683000.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"><img src="img/logo.png"><img src="img/icon.PNG"></a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse text-monospace" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#concept">Concept</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Service</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Connect</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div id="slides" class="carousel slide" data-ride="carousel">
+		<ul class="carousel-indicators">
+			<li data-target="#slides" data-slide-to="0" class="active"></li>
+			<li data-target="#slides" data-slide-to="1"></li>
+			<li data-target="#slides" data-slide-to="2"></li>
+		</ul>
+		<div class="carousel-inner">
+			<div class="carousel-caption">
+				<h1 class="display-2 font-italic">my portfolio</h1>
+				<a href="#" class="btn-sticky">BUTTON</a>
+				<button type="button" class="btn btn-primary btn-lg">Get Started</button>
+			</div>
+			<div class="carousel-item active">
+				<img src="img/header1.jpeg">
+			</div>
+			<div class="carousel-item">
+				<img src="img/header2.jpeg">
+			</div>
+			<div class="carousel-item">
+				<img src="img/ramen1.JPG">
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="jumbotron text-center">
+
+			<div class="concept padding text-monospace" id="concept">
+				<div class="row welcome">
+					<div class="col-12">
+						<h1 class="concept-title text-secondary text-center">CONCEPT</h1>
+						<h3 class="concept-subheading text-center">何気ない日常に”より便利”を</h3>
+						<p class="concept-text text-center">
+							何気なく過ごしている日常の中で”こんなサービスがあったらな”<br>という皆様の思いを形にして世の中のサービスを誰でも使いやすく<br>よりストレスフリーな世の中にしていくこと。<br>また、サービスを使う事で多くの人が笑顔になれる様にと想いを込めて<br>より良いものを作ることを心掛けております。
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid padding text-monospace">
+				<div class="row welcome text-center">
+					<div class="col-12">
+						<h1 class="display-4">Skill</h1>
+					</div>
+					<hr>
+
+					<!-- skillパラメーター -->
+					<canvas class="skill-level" id="myRaderChart"></canvas>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+
+					<script>
+						var ctx = document.getElementById("myRaderChart");
+						var myRadarChart = new Chart(ctx, {
+							type: 'radar',
+							data: {
+								labels: ["Python", "HTML & CSS", "Ruby"],
+								datasets: [{
+									label: '比重',
+									data: [3, 3, 2,],
+									backgroundColor: "rgba(255,100,0,0.6)",
+									borderColor: "rgb(255,100,0)",
+									borderWidth: 1,
+									pointBackgroundColor: 'RGB(255,50,0)'
+								}]
+							},
+							options: {
+								scale: {
+									ticks: {
+										suggestedMin: 0,
+										suggestedMax: 5,
+										stepSize: 1,
+										callback: function (value, index, values) {
+											return ""
+										}
+									}
+								}
+							}
+						});
+					</script>
+				</div>
+			</div>
+
+			<div class="container-fluid padding text-monospace">
+				<div class="row welcome text-center">
+					<div class="col-12">
+						<h1 class="display-4">Works</h1>
+					</div>
+					<hr>
+				</div>
+			</div>
+
+			<div class="container-fluid padding text-monospace">
+				<div class="works">
+					<img class="col-md-4" src="img/hit&blow.png">
+					<a href="https://github.com/reomatsuoka/study-python/blob/main/basic/practice2.py"
+					class="btn btn-outline-secondary"></a>
+					<img class="col-md-4" src="img/hit&blow.png">
+					<a href="https://github.com/reomatsuoka/study-python/blob/main/basic/practice2.py"
+					class="btn btn-outline-secondary"></a>
+					<img class="col-md-4" src="img/hit&blow.png">
+					<a href="https://github.com/reomatsuoka/study-python/blob/main/basic/practice2.py"
+					class="btn btn-outline-secondary"></a>
+				</div>
+					<!-- <div class="row padding">
+						<div class="col-md-4">
+							<div class="card">
+								<img class="card-img-top" src="img/flame２.jpg" alt="Card image">
+								<div class="card-body">
+									<h2 class="card-title">Ruby</h2>
+									<h6 class="card-text">Progateにてメニュー表作成</h6>
+									<a href="#" class="btn btn-outline-secondary">See portfolio</a>
+								</div>
+							</div>
+						</div> -->
+					<!-- <div class="col-md-4">
+						<div class="card">
+							<img class="card-img-top" src="img/flame２.jpg">
+							<div class="card-body">
+								<h2 class="card-title">HTML&CSS</h2>
+								<h6 class="card-text">ポートフォリオ作成</h6>
+								<a href="#" class="btn btn-outline-secondary">See portfolio</a>
+							</div>
+						</div>
+					</div>
+				</div> -->
+					<div class="padding text-monospace" id="about">
+						<div class="row welcome text-center">
+							<div class="col-12">
+								<h1 class="display-4">松岡玲央 取扱説明書</h1>
+							</div>
+							<hr>
+
+							<div class="col-12 text-secondary">
+								<h3 class="lead text-left">経歴</h3>
+								<ul class="list-group list-group-flush text-left">
+									<li class="list-group-item">2019年3月　甲南大学経営学部経営学科を卒業</li>
+									<li class="list-group-item">2019年4月　株式会社レオパレス21に就職</li>
+									<li class="list-group-item">現在に至る。</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card flex-row-reverse text-monospace introduction">
+						<div class="card bg-dark text-dark in-list">
+							<img src="img/flame.important.jpg" class="img-fluid" alt="...">
+						</div>
+					</div>
+					<div class="card flex-row text-monospace introduction">
+						<div class="card bg-dark text-dark in-list">
+							<img src="img/flame.ramen.jpg" class="img-fluid" alt="...">
+						</div>
+					</div>
+					<div class="card flex-row-reverse text-monospace introduction">
+						<div class="card bg-dark text-dark in-list">
+							<img src="img/flame.cafe.jpg" class="img-fluid" alt="...">
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid padding text-monospace">
+					<div class="row text-center padding">
+						<div class="col-12">
+							<h2>Connect</h2>
+						</div>
+						<div class="col-12 social padding">
+							<a href="#"><i class="fab fa-facebook"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#" class="insta_btn">
+								<span class="insta">
+									<i class="fab fa-instagram"></i>
+								</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container-fluid padding text-monospace">
+				<div class="row text-center">
+					<div class="col-md-4">
+						<p>　　　　　</p>
+						<p>000-000-0000</p>
+						<p>reo199637458@gmail.com</p>
+						<p>住所</p>
+					</div>
+					<div class="col-md-4">
+						<hr class="light">
+						<h5>Our Hours</h5>
+						<hr class="light">
+						<p>月〜金：9pm〜1am</p>
+						<p>土・祝：9am〜0am</p>
+						<p>日：closed</p>
+					</div>
+					<div class="col-md-4">
+						<hr class="light">
+						<h5>Service area</h5>
+						<hr class="light">
+						<p>全国</p>
+					</div>
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-12">
+					<hr class="light">
+					<p>(c) reo_matsuoka.com</p>
+				</div>
+			</div>
+		</footer>
+		</section>
+</body>
+
+</html>
