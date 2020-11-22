@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,inital-scale=1">
 	<title>松岡玲央のポートフォリオ</title>
-	<link rel="icon" href="favicon.ico">
+	<link rel="icon" href="img/logo.png">
 	<meta name="description" content="松岡玲央のポートフォリオです。">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -26,7 +26,7 @@
 <body>
 	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#"><img src="img/logo.png"><img src="img/icon.PNG"></a>
+			<a class="navbar-brand" href="#"><img src="img/image0.jpeg"></a>
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 				<span class="navbar-toggler-icon"></span>
@@ -35,19 +35,19 @@
 		<div class="collapse navbar-collapse text-monospace" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="#">Home</a>
+					<a class="nav-link" href="#home">Home</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#concept">Concept</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Service</a>
+					<a class="nav-link" href="#works">Works</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="about">About</a>
+					<a class="nav-link" href="#about">About</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Connect</a>
+					<a class="nav-link" href="#connect">Connect</a>
 				</li>
 			</ul>
 		</div>
@@ -58,11 +58,9 @@
 			<li data-target="#slides" data-slide-to="1"></li>
 			<li data-target="#slides" data-slide-to="2"></li>
 		</ul>
-		<div class="carousel-inner">
+		<div class="carousel-inner" id="home">
 			<div class="carousel-caption">
 				<h1 class="display-2 font-italic">About to Reo</h1>
-				<!-- <a href="#" class="btn-sticky">BUTTON</a>
-				<button type="button" class="btn btn-primary btn-lg">Get Started</button> -->
 			</div>
 			<div class="carousel-item active">
 				<img src="img/header1.jpeg">
@@ -75,9 +73,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
-		<div class="jumbotron jumbotron-fluid text-center">
-
+	<div class="jumbotron jumbotron-fluid text-center" style="background: url(img/back.jpg)">
+		<div class="container">
 			<div class="concept padding text-monospace" id="concept">
 				<div class="row welcome">
 					<div class="col-12">
@@ -130,12 +127,14 @@
 							}
 						});
 					</script>
-					<img class="col-md-6 skill-photo" src="img/paiza.png">
-					<a href="https://github.com/reomatsuoka/study-python/blob/main/basic/practice2.py"></a>
+					<div class="col-md-6">
+						<img src="img/paiza.png" class="img-fluid paiza-photo">
+						<a href="https://github.com/reomatsuoka/study-python/blob/main/basic/practice2.py"></a>
+					</div>
 				</div>
 			</div>
 
-			<div class="container-fluid padding text-monospace">
+			<div class="container-fluid padding text-monospace" id="works">
 				<div class="row welcome text-center">
 					<div class="col-12">
 						<h1 class="display-4">Works</h1>
@@ -144,96 +143,94 @@
 				</div>
 			</div>
 
-			<div class="container-fluid padding text-monospace">
-				<div class="works">
-					<img class="col-md-4 works-photo" src="img/portfolio.png">
-					<a href="https://github.com/reomatsuoka/study-python/blob/main/basic/practice2.py"
-						class="btn btn-outline-secondary"></a>
-					<img class="col-md-4 works-photo" src="img/hit&blow.png">
-					<a href="https://github.com/reomatsuoka/study-python/blob/main/basic/practice2.py"
-						class="btn btn-outline-secondary"></a>
-				</div>
-				<!-- <div class="row padding">
-						<div class="col-md-4">
-							<div class="card">
-								<img class="card-img-top" src="img/flame２.jpg" alt="Card image">
-								<div class="card-body">
-									<h2 class="card-title">Ruby</h2>
-									<h6 class="card-text">Progateにてメニュー表作成</h6>
-									<a href="#" class="btn btn-outline-secondary">See portfolio</a>
-								</div>
-							</div>
-						</div> -->
-				<!-- <div class="col-md-4">
+			<div class="container-fluid padding">
+				<div class="row padding">
+					<div class="col-md-6">
 						<div class="card">
-							<img class="card-img-top" src="img/flame２.jpg">
-							<div class="card-body">
-								<h2 class="card-title">HTML&CSS</h2>
-								<h6 class="card-text">ポートフォリオ作成</h6>
-								<a href="#" class="btn btn-outline-secondary">See portfolio</a>
-							</div>
+							<img class="card-img-top works-photo" src="img/portfolio.png">
+							<a href="https://github.com/reomatsuoka/portfolio/blob/main/index.html"
+								class="btn btn-outline-secondary">See portfolio</a>
 						</div>
 					</div>
-				</div> -->
-				<div class="padding text-monospace" id="about">
-					<div class="row welcome text-center">
-						<div class="col-12">
-							<h1 class="display-4">About</h1>
+					<div class="col-md-6">
+						<div class="card">
+						<img class="card-img-top works-photo" src="img/hit&blow.png">
+							<a href="https://github.com/reomatsuoka/study-python/blob/main/basic/practice2.py"
+								class="btn btn-outline-secondary">Let's play the game</a>
 						</div>
-						<hr>
-						<h5 class="col-12 intro-sub text-center">ここでは少しreoってどんな人なのかを書いていこうかと思いますので<br>是非見て頂ければ幸いです。。。
-						</h5>
-
-						<div class="col-12 text-secondary">
-							<h3 class="lead text-left">Career</h3>
-							<ul class="list-group list-group-flush text-left">
-								<li class="list-group-item">2015年4月　甲南大学経営学部経営学科を卒業</li>
-								<li class="list-group-item">2019年3月　甲南大学経営学部経営学科を卒業</li>
-								<li class="list-group-item">2019年4月　株式会社レオパレス21に就職</li>
-								<li class="list-group-item">現在に至る。</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<h3 class="me text-left text-secondary">Caracter</h3>
-				<div class="card flex-row-reverse text-monospace introduction">
-					<div class="card bg-dark text-dark in-list">
-						<img src="img/flame.important.jpg" class="img-fluid" alt="...">
-					</div>
-				</div>
-				<div class="card flex-row text-monospace introduction">
-					<div class="card bg-dark text-dark in-list">
-						<img src="img/flame.ramen.jpg" class="img-fluid" alt="...">
-					</div>
-				</div>
-				<div class="card flex-row-reverse text-monospace introduction">
-					<div class="card bg-dark text-dark in-list">
-						<img src="img/flame.cafe.jpg" class="img-fluid" alt="...">
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid padding text-monospace">
-				<div class="row text-center padding">
+
+			<div class="padding text-monospace" id="about">
+				<div class="row welcome text-center">
 					<div class="col-12">
-						<h1 class="display-4">Connect</h1>
+						<h1 class="display-4">About</h1>
 					</div>
-					<div class="col-12 social padding">
-						<a href="#"><i class="fab fa-facebook"></i></a>
-						<a href="#"><i class="fab fa-twitter"></i></a>
-						<a href="#" class="insta_btn">
-							<span class="insta">
-								<i class="fab fa-instagram"></i>
-							</span></a>
+					<hr>
+					<h5 class="col-12 intro-sub text-center">ここでは少しreoってどんな人なのかを書いていこうかと思いますので<br>是非見て頂ければ幸いです。。。
+					</h5>
+
+					<div class="col-12 text-secondary">
+						<h3 class="lead text-left text-secondary">Career</h3>
+						<ul class="list-group list-group-flush text-left">
+							<li class="list-group-item">2015年4月　甲南大学経営学部経営学科を卒業</li>
+							<li class="list-group-item">2019年3月　甲南大学経営学部経営学科を卒業</li>
+							<li class="list-group-item">2019年4月　株式会社レオパレス21に就職</li>
+							<li class="list-group-item">現在に至る。</li>
+						</ul>
 					</div>
+				</div>
+			</div>
+			<h3 class="me text-left text-secondary">Caracter</h3>
+			<div class="card flex-row-reverse text-monospace introduction">
+				<div class="card in-list">
+					<img src="img/flame.important-removebg.png" class="img-fluid" alt="...">
+				</div>
+			</div>
+			<div class="card flex-row text-monospace introduction">
+				<div class="card in-list">
+					<img src="img/flame.ramen-removebg.png" class="img-fluid" alt="...">
+				</div>
+			</div>
+			<div class="card flex-row-reverse text-monospace introduction">
+				<div class="card in-list">
+					<img src="img/flame.cafe-remove.png" class="img-fluid" alt="...">
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid padding text-monospace" id="connect">
+			<div class="row text-center padding">
+				<div class="col-12">
+					<h1 class="display-4">Connect</h1>
+				</div>
+				<div class="col-12 social padding">
+					<a href="https://www.facebook.com/profile.php?id=100012744996579"><i class="fab fa-facebook"></i></a>
+					<a href="https://twitter.com/meronnokuma"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.instagram.com/reo37458/?hl=ja" class="insta_btn">
+						<span class="insta">
+							<i class="fab fa-instagram"></i>
+						</span></a>
+				</div>
+			</div>
+			<div class="message-fluid">
+				<div class="col-12">
+					<p class="message-text">最後までご覧頂きありがとうございました。このサイトを通して<br>
+						私のことを少しでも知って頂けたなら嬉しい限りです。まだまだ未熟ではありますが<br>
+						皆様に寄り添ったものを提供し笑顔を作れる存在を目指し、これからも頑張って参りますので<br>
+						ご要望・ご質問等ございましたらご連絡頂ければと思います。</p>
+					<h1 class="message-last text-center">thanks you for comming!</h1>
+
 				</div>
 			</div>
 		</div>
 	</div>
+	</div>
 	<footer>
 		<div class="container-fluid padding text-monospace">
 			<div class="row text-center">
-				<div class="col-md-4">
-					<p>　　　　　</p>
+				<div class="col-md-4 fo">
+					<img src="img/image0.jpeg">
 					<p>000-000-0000</p>
 					<p>reo199637458@gmail.com</p>
 					<p>住所</p>

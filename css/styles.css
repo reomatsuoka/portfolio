@@ -6,9 +6,7 @@ html,body{
   color: #222;
 }
 .jumbotron {
-  background-image: url("bg.jpg");
-  background-size: cover;
-  background-position: center 60%;
+  margin-bottom: 0;
 }
 
 .navbar{
@@ -48,52 +46,28 @@ padding: .8rem;
   text-shadow: 1px 1px 10px black;
   padding-bottom: 1rem;
 }
-.btn-sticky {
-  display: inline-block;
-  padding: 0.6em 1em;
-  text-decoration: none;
-  background: #f7f7f7;
-  border-left: solid 6px #ff7c5c;/*左線*/
-  color: #ff7c5c;/*文字色*/
-  font-weight: bold;
-  font-size: 1.4rem;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
-}
-.btn-sticky:active {
-  box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
-  transform: translateY(2px);
-}
-.btn{
-  font-size: 1.5rem;
-  margin:0 1.5rem;
-}
-.btn-primary{
-  background-color: #6648b1;
-  border: 1px solid #6648b1;
-}
-.btn-primary:hover{
-  background-color: #563d7c;
-  border: 1px solid #563d7c;
-}
+
 /* コンセプト */
 .concept-title{
-  font-size: 7rem ;
-  letter-spacing: 1.5rem;
+  font-size: 8vw;
+  letter-spacing: .3em;
+  text-indent: .3rem;
   opacity: 0.3;
   padding-bottom: 1rem;
 }
 .concept-subheading{
   margin-bottom: 2rem;
+  font-size: 2.5vw;
 }
 .concept-text{
   line-height: 3rem;
+  font-size: 1.4vw;
 }
 .padding{
   padding-bottom: 2rem;
 }
 .welcome{
-  width: 75%;
-  margin: 0 auto;
+  width: 100%;
   padding-top: 3rem;
 }
 .display-4{
@@ -107,6 +81,8 @@ padding: .8rem;
 }
 
 .lead,.me{
+  font-family: "poppins",sans-serif;
+  width:930px;
   font-size: 3rem;
   padding-top: 1rem;
   padding-bottom: 2rem;
@@ -114,15 +90,18 @@ padding: .8rem;
 .list-group-item{
   font-size: 1.7rem;
 }
-.skill-photo{
-  width: 200px;
-  height: 200px;
-}
 
 /* 自己紹介 */
 .intro-sub{
   padding-bottom: 2rem;
   margin-top: -40px;
+}
+.paiza-photo{
+  max-width: 300px;
+  height: auto;
+}
+.list-group-item{
+  background-color: unset;
 }
 .introduction{
   border: unset;
@@ -136,11 +115,12 @@ padding: .8rem;
   padding:0;
 }
 .works-photo{
-  width: 500px;
-  height: 250px;
+  width: cover;
+  height: 300px;
 }
-.me{
-  padding-left: 9.3rem;
+
+.card{
+  background-color: unset;
 }
 
 /* SNSアイコン */
@@ -183,20 +163,32 @@ padding: .8rem;
   line-height: 50px;/*高さと合わせる*/
   top: -30px;
 }
+
+/* 最後に */
+.message-text{
+  padding-bottom: 2rem;
+  line-height: 3rem;
+  font-size: 1.4vw;
+}
+.message-last{
+  padding-top: 2rem;
+  padding-bottom: -1rem;
+  font-size: 3rem;
+}
+
 footer{
-  background-color:#3f3f3f;
-  color:#d5d5d5;
+  background-color:#f8f9fa;;
   padding-top: 2rem;
 }
+.fo img{
+  height: cover;
+  width: 200px;
+  padding-bottom: 2rem;
+}
 hr.light{
-  border-top: 1px solid #d5d5d5;
+  border-top: 1px solid black;
   width:75%;
   margin-top: .8rem;
   margin-bottom: 1rem;
 }
-
-/* .card-img{
-  height: 300px;
-  width: 400px;
-} */
 
